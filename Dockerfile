@@ -1,6 +1,5 @@
-# PHP 7 with Supervisor for running Workers
-FROM php:cli
-MAINTAINER Carlos Buenosvinos <carlos.buenosvinos@gmail.com>
+# PHP 8.2 with Supervisor for running Workers
+FROM php:8.2-cli
 
 RUN docker-php-ext-install -j$(nproc) bcmath
 
